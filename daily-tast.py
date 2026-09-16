@@ -1849,3 +1849,5 @@ class Rect(Shape):
 obj  = [Circle(),Rect()]
 for i in obj:
     i.area()
+
+""""""
