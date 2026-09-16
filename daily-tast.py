@@ -1275,7 +1275,7 @@ print(res) """
 """ lst = [1, 2, 3, 4, 5, 6, 7, 8]
 res =list(map(lambda n:n**3 ,filter(lambda n:n%2==0,lst)))
 print(res) """
-
+""" 
 class Student:
     def __init__(self,name,marks):
         self.name = name
@@ -1284,4 +1284,568 @@ class Student:
         print(f"name:{self.name}")
         print(f"marks:{self.marks}")
 s1 = Student("teja",56)
+s1.display() """
+
+""" class Bank:
+    def __init__(self,name):
+        self.name = name
+    def deposit(self,n):
+        return n
+    def withdrwa(m):
+        return m - deposit(n)
+    def display(n):
+        return self.name ,withdrwa()
+
+s1 = Bank("teja")
+s1.deposit(10000) """
+""" 
+class Stud:
+    def __init__(self,name,roll_no,marks):
+        self.name = name
+        self.roll_no =roll_no
+        self.marks = marks
+    def display(self):
+        print("Name :",self.name)
+        print("ROll_no :",self.roll_no)
+        print("Marks :",self.marks)
+s1 = Stud("teja",101,85)
+s1.display() """
+
+""" class Rect:
+    def __init__(self,len,breadth):
+        self.len = len
+        self.breadth = breadth
+    def length(self):
+        return self.len*self.breadth
+    def Per(self):
+        return 2*(self.len+self.breadth)
+s1 = Rect(10,5)
+res = s1.length()
+print(res)
+res2 = s1.Per()
+print(res2) """
+""" 
+class Emp:
+    def __init__(self,name,id,salary,):
+        self.name = name
+        self.id = id
+        self.salary = salary
+        self.m = 0
+    def sal(self,n):
+        self.m = n
+    def display(self):
+        print(self.name)
+        print(self.id)
+        print(self.n)
+        print(self.salary+self.m)
+
+s1 = Emp("surya",101,40000)
+s1.sal(5000)
 s1.display()
+"""
+        
+
+""" 
+class Mobile:
+    def __init__(self,brand,model,prince):
+        self.brand = brand
+        self.model = model
+        self.prince = prince
+    def display(self):
+        print("brand",self.brand)
+        print("price",self.prince)
+        print("model",self.model)
+obj = Mobile("samsung","s24",70000)
+obj.display()
+
+obj1 = Mobile("redmi","redmi13",15000)
+obj1.display()
+ """
+""" 
+class Stud:
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks= marks
+    def display(self):
+        if  self.marks > 40:
+            print(self.name,"pass")
+        else:
+            print(self.name,"fali")
+s1 = Stud("teja",45)
+s2  = Stud("ravi",39)
+s1.display()
+s2.display() """
+
+""" class Product:
+    def __init__(self,name,price,quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+   
+    def dispay(self):
+        print(self.name)
+        print(self.price*self.quantity)
+        print(self.quantity)
+s1 = Product("teja",1000,2)
+s1.dispay() """
+
+""" class Cir:
+    def __init__(self,radius):
+        self.radius =radius
+    def display(self):
+        print("area",3.14*(self.radius*self.radius))
+s1 = Cir(5)
+s1.display()
+ """
+""" class Bank:
+    def __init__(self,name,balance):
+        self.name = name
+        self.balance = balance
+    def withdraw(self,n):
+        if self.balance > n:
+            self.balance = self.balance - n
+    def disposite(self,m):
+        self.balance = self.balance+m
+    def display(self):
+        print("name : " ,self.name)
+        print("balance",self.balance)
+c1 = Bank("ravi",5000)
+c1.display()
+c1.disposite(1400)
+c1.display()
+c1.withdraw(4000)
+c1.display() """
+
+""" 
+class Mobile:
+    def __init__(self,brand,price):
+        self.brand = brand
+        self.price = price
+    def discount(self,percent):
+        self.price = self.price - ((percent/100)*self.price) 
+    def display(self):
+        print(self.price)
+
+c1 = Mobile("samsung",50000)
+c1.discount(10)
+c1.display() """
+
+""" class Mobile:
+    def __init__(self,brand,price):
+        self.price = price
+    def display(self):
+        print(self.brand)
+        print(self.price)
+
+c1 = Mobile("lg",3456)
+print(c1.brand) """
+
+""" class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def display(self):
+        print(self.__balance)
+print(self.__balance) """
+
+
+""" class Stud:
+    def __init__(self,name):
+        self.__name = name
+    def get_balance(self):
+        return self.__name
+c1 = Stud("teja")
+print(c1.get_balance()) """
+
+""" class Mobile:
+    def __init__(self, price):
+        self.__price = price
+
+    def  access(self):
+        return self.__price
+c1 = Mobile(4500)
+print(c1.access()) """
+
+""" class Mobile:
+    def __init__(self, price):
+        self.__price = price
+    def  access(self):
+        return self.__price
+    def set_price(self, price):
+        self.__price = price
+c1 = Mobile(4500)
+c1.set_price(2300)
+print(c1.access()) """
+
+""" class Bank:
+    def __init__(self,name,balance):
+        self.name = name
+        self.__balance  = balance
+    def deposit(self,m):
+        self.__balance = self.__balance+m
+    def withdraw(self,w):
+        if self.__balance > w:
+            self.__balance = self.__balance - w
+    def  display(self):
+        return self.name,self.__balance
+s1 = Bank("teja",5000)
+s1.withdraw(2000)
+s1.deposit(5000)
+res = s1.display()
+print(res) """
+""" 
+class Emp:
+    def __init__(self,name,salary):
+        self.name = name
+        self.__salary = salary
+    @property    
+    def getter(self):
+        return self.name,self.__salary
+    @getter.setter
+    def getter(self,m):
+        self.__salary = m
+c1 = Emp("teja",5000)
+res = c1.getter
+print(res)
+c1.setter = 6000
+res = c1.getter
+print(res) """
+""" 
+ """
+""" 
+class Tem:
+    def __init__(self,tempareture):
+        self.__tempareture = tempareture
+    @property
+    def xyz(self):
+        result = f"tempareture   {self.__tempareture}"
+        return result
+    @xyz.setter
+    def xyz(self,m):
+        self.__tempareture = m
+c1 = Tem(39)
+res = c1.xyz
+print(res)
+c1.xyz = 60
+res = c1.xyz
+print(res)
+ """
+""" 
+class Student :
+    def __init_(self ,name,age,m1,m2):
+        self.name = name
+        self.age = age
+        self.m1= m1
+        self.m2 = m2
+    def display(self):
+        print(self.name,self.age)
+    def ava(self):
+        return (self.m1+self.m2)//2
+    def grade(self):
+        avg = self.ava()
+        if avg >= 70:
+            grade = "A"
+        elif avg >=50:
+            grade = "B"
+        else:
+            grade = "c"
+        msg = f"{self.name},grade{grade}"
+class Mgmt:
+    def __init__(self):
+        self.student = []
+    def join(self,std):
+        self.student.append(std)
+    def display_students(self):
+        for  std in self.student:
+            std.dispay()
+
+
+    
+ """
+""" 
+class A:
+    def __init__(self,vehicle):
+        self.vehicle = vehicle
+    def display(self):
+        print(self.vehicle)
+class B(A):
+    def __init__(self,model):
+        self.model = model
+    def display(self):
+        super().display()
+        print(self.model)
+
+c1 = A("toyota")
+c2 = B("innova")
+c2.display()
+     """
+
+
+""" class User:
+    def __init__(self,name):
+        self.name = name
+    def display(self):
+        print(self.name)
+class Salary(User):
+    def __init__(self,salary):
+        self.salary = salary
+    def display(self):
+        super().display()
+        print(self.salary)
+
+c2 = Salary(2500,"tjea")
+c2.display()
+ """
+
+
+""" 
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print("Vehicle started")
+        print(self.brand)
+
+
+class Car(Vehicle):
+    def __init__(self, brand, model):
+        super().__init__(brand)
+        self.model = model
+
+    def drive(self):
+        print("Car is driving")
+        print(self.model)
+
+
+c1 = Car("Toyota", "Innova")
+
+c1.start()
+c1.drive()
+ """ """
+class Parent:
+    def __init__(self,name):
+        self.name = name
+    def display(self):
+        print(self.name)
+class Student(Parent):
+    def __init__(self,name,mark):
+        super().__init__(name)
+        self.mark = mark
+    def display1(self):
+        print(self.mark)
+c1 = Student("teja",85)
+c1.display()
+c1.display1()
+ """
+""" class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+class Dog(Animal):
+    def sound(self):
+        super().sound()
+        print("Dog barks")
+c1 = Dog()
+c1.sound()
+ """
+""" class Employee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+    def display(self):
+        print("employee")
+class Manager(Employee):
+    def __init__(self,name,salary):
+        super().__init__(name,salary)
+    def display(self):
+        print("Manager")
+c1  = Manager("teja",40550)
+c1.display() """
+
+""" class Vehicle:
+    def start(self):
+        print("vehicle starts")
+class Bike(Vehicle):
+    def start(self):
+        print("Bike starts with a kick")
+b1  = Bike()
+b1.start() """
+
+""" 
+class Per:
+    def __init_(self,name):
+       self.name = name
+    def display(self):
+        print(self.name)
+class Salary(Per):
+    def __init__(self,name,salary):
+        super().__init(name)
+        self.salary = salary
+    def display_salayr(self):
+        print(self.salary)
+class Department(Salary)
+    def __init__(self,name,salary,department):
+        super().__init__(salary,name)
+    def name  """
+
+
+
+
+""" class Emp:
+    def __init__(self,name,salary):
+        self.name =name
+        self.salary = salary
+    def display(self):
+        print(self.name)
+        print(self.salary)
+class Manager(Emp):
+    def __init__(self,name ,salary,dept):
+        super().__init__(name,salary)
+        self.dept  = dept
+    def display(self):
+        super().display()
+        print(self.dept)
+c1 = Manager("teja",45000,"IT")
+c1.display()
+ """
+""" class Mobile():
+    def Power_on(self):
+        print("Mobile Powered on")
+class SmartPhone(Mobile):
+    def use_app(self):
+        print("using Instager")
+c1 = SmartPhone()
+c1.Power_on()
+c1.use_app() """
+
+""" class Student:
+    def __init__(self,name):
+        self.name = name
+    def display(self):
+        print(self.name)
+class Marks(Student):
+    def __init__(self,name,marks):
+        super().__init__(name)
+        self.marks = marks
+    def display(self):
+        super().display()
+        if self.marks >40:
+            print("pass")
+        else:
+            print("fail")
+class Result(Marks):
+    pass
+c1 = Result("teja",60)
+c1.display() """
+
+
+""" class Company:
+    def display(self):
+        print("teja techs")
+class Dev(Company):
+    def display1(self):
+        
+        print("develop the software")
+class Test(Company):
+    def display(self):
+        super().display()
+        print("test the software")
+
+c1 = Dev()
+c2 = Test()
+c2.display()
+c1.display()
+c1.display1() """
+
+""" class A:
+    def sound(self):
+        print("hello")
+class B:
+    def sound(self):
+        print("world")
+class C:
+    def sound(self):
+        print("teja")
+obj = [A(),B(),C()]
+for i in obj:
+    i.sound()
+def  fun(n):
+    n.sound()
+fun(A())
+fun(B())
+fun(C())
+ """
+""" class Vehicle:
+    def __init__(self,brand,price):
+        self.brand = brand
+        self.price = price
+    def display(self):
+        print(self.brand)
+        print(self.price)
+class car(Vehicle):
+    def __init__(self,fuel,brand,price):
+        super().__init__(brand,price)
+        self.fuel = fuel
+    def display(self):
+        super().display()
+        print(self.fuel)
+obj = car("petrol","toyota",300000)
+obj.display() """
+
+""" class Vehicle:
+    def strat(self):
+        print("vehicle is starting")
+class Car(Vehicle):
+    def strat(self):
+        print("car started with a key")
+c1= Car()
+c1.strat() """
+""" 
+class Dog:
+    def sound(self):
+        print("dog barks ")
+class Cat:
+    def sound(self):
+        print("car meows")
+obj = [Dog(),Cat()]
+for i in obj:
+    i.sound() """
+""" 
+class Bike:
+    def move(self):
+        print("bike moves on two wheels")
+class  Car:
+    def move(self):
+        print("car moves on four wheels")
+def fun(obj):
+    obj.move()
+fun(Bike())
+fun(Car()) """
+""" 
+class Emp:
+    def salary(self):
+        print("basic salary")
+class Developer(Emp):
+    def salary(self):
+        print("Developer Salary: 50000")
+class Tester(Emp):
+    def salary(self):
+        print("Tester Salary: 40000")
+
+c1 = Tester()
+c1.salary()
+c2=Developer()
+c2.salary() """
+class Shape:
+    def  area(self):
+        print("Area of Shape")
+class Circle(Shape):
+    def area(self):
+        print("Circle Area")
+class Rect(Shape):
+    def area(self):
+        print("rectangle area")
+
+obj  = [Circle(),Rect()]
+for i in obj:
+    i.area()
