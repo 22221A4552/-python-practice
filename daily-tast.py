@@ -1836,7 +1836,7 @@ c1 = Tester()
 c1.salary()
 c2=Developer()
 c2.salary() """
-class Shape:
+""" class Shape:
     def  area(self):
         print("Area of Shape")
 class Circle(Shape):
@@ -1851,3 +1851,16 @@ for i in obj:
     i.area()
 
 """"""
+class A:
+    def display(self):
+        print(self) """
+
+class A:
+    def __init__(self,name):
+        self.name = name
+class B(A):
+    def display(self):
+        print(self.name)
+c1 = A(10)
+c2 = B(10)
+c2.display()
